@@ -1,0 +1,18 @@
+{% extends 'backbone/base.html' %}
+{% load staticfiles %}
+{% block extra_js %}
+    <script src="{% static 'js/CheckInSample.js' %}"></script>
+    <script src="{% static 'js/box/box.js' %}"></script>
+{% endblock extra_js %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4" style="display:flex;flex-direction:column">
+            <button type="button" class="btn btn-primary btn-lg" id="scan-get-info">Get Info</button>
+            <button type="button" class="btn btn-primary btn-lg" id="scan-check-in-sample">Check-In Sample</button>
+            <button type="button" class="btn btn-primary btn-lg" id="scan-check-out-sample">Check-Out Sample</button>
+        </div>
+        <div class="col-sm-8" id="scan-sink"></div>
+    </div>
+</div>
+{% endblock content %}

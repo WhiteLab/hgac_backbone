@@ -1,0 +1,163 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HGAC Backbone</title>
+
+    <!-- Import Javascript libraries -->
+    <script src="{% static 'jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'js/BarcodeListener.js' %}"></script>
+    <script src="{% static 'webcomponentsjs/webcomponents-lite.min.js' %}"></script>
+    {% block extra_js %}
+    {% endblock %}
+
+    <!-- Import any Polymer elements -->
+    {% block polymer_elements %}
+    <link rel="import" href="{% static 'polymer-elements/proto-element.html' %}">
+    {% endblock %}
+
+    <!-- Import CSS stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.backbone.css' %}">
+    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/backbone.css' %}"/>
+
+    {% block extra_css %}
+    {% endblock %}
+</head>
+<body>
+    <div class="container-fluid backbone-navbar">
+        <div class="navbar-header">
+            <span class="fa fa-4x fa-weibo navbar-brand" style="margin-top:-16px;color:#404e7c"></span>
+            <a class="navbar-brand" href="#">High-throughput Genome Analysis Core</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" style="font-size: medium;text-transform: none">
+                <li><a href="#">Customer Portal</a></li>
+                <li><a href="#">Technician Portal</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+    </div>
+    {% block content %}
+    <section class="backbone-tall-section backbone-frontpage-jumbo">
+        <div class="container">
+            <div class="row backbone-center">
+                <h1>A Highly Efficient and Award Winning Sequencing Core</h1>
+                <h3 style="margin:0">This isn't your grandma's science</h3>
+    {#            <proto-element></proto-element>#}
+{#                <div id="done"></div>#}
+    {#            <a href="#">This is a link</a>#}
+            </div>
+            <div class="row backbone-section">
+                <div class="col-sm-4">
+                    <div class="backbone-center" style="margin-bottom:12px">
+                        <span class="fa fa-5x fa-arrows-h"></span>
+                    </div>
+                    <span>Lorem ipsizzle dolizzle sit amizzle, nizzle adipiscing yo. Nullizzle sapizzle velit, dope volutpat, izzle mammasay mammasa mamma oo sa, phat vizzle, yo mamma. Pellentesque eget boom shackalack. Sizzle erizzle. Boofron fo shizzle dolizzle dapibus boofron tempus that's the shizzle. Mauris pellentesque fizzle et turpizzle. We gonna chung in tortizzle. Pellentesque fo shizzle rhoncizzle dawg. In hizzle habitasse platea dictumst. Break it down dapibizzle. Check it out fo shizzle mah nizzle fo rizzle, mah home g-dizzle we gonna chung, pretizzle sheezy, mattizzle tellivizzle, eleifend vitae, nunc. Mofo things. Integer sempizzle velizzle sizzle shut the shizzle up.</span>
+                </div>
+                <div class="col-sm-4">
+                    <div class="backbone-center" style="margin-bottom:12px">
+                        <span class="fa fa-5x fa-bug"></span>
+                    </div>
+                    <span>I love cheese, especially airedale queso. Cheese and biscuits halloumi cauliflower cheese cottage cheese swiss boursin fondue caerphilly. Cow port-salut camembert de normandie macaroni cheese feta who moved my cheese babybel boursin. Red leicester roquefort boursin squirty cheese jarlsberg blue castello caerphilly chalk and cheese. Lancashire.</span>
+                    <div style="margin-top:24px">
+                        <button class="btn btn-info" style="width:50%">Learn More</button>
+                    </div>
+
+                </div>
+                <div class="col-sm-4">
+                    <div class="backbone-center" style="margin-bottom:12px">
+                        <span class="fa fa-5x fa-life-buoy"></span>
+                    </div>
+
+                    <span>We don't have a brig.
+
+Is today's hectic lifestyle making you tense and impatient? Yes! In your face, Gandhi! Why yes! Thanks for noticing. You lived before you met me?! I can explain. It's very valuable.
+
+Are you crazy? I can't swallow that. I don't know what you did, Fry, but once again, you screwed up! Now all the planets are gonna start cracking wise about our mamas. Goodbye, friends. I never thought I'd die like this. But I always really hoped.
+
+No, just a regular mistake.
+
+You, minion. Lift my arm. AFTER HIM! Who am I making this out to? There, now he's trapped in a book I wrote: a crummy world of plot holes and spelling errors! We can't compete with Mom! Her company is big and evil! Ours is small and neutral!
+
+</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="container">
+        <section class="backbone-section">
+            <div class="row backbone-center">
+                <h1>Fry! Stay back! He's too powerful!</h1>
+                <h3 style="margin-top:0">Incidentally, you have a dime up your nose</h3>
+            </div>
+            <div class="row backbone-section">
+                <div class="col-sm-6"><p>Kogi cornhole 90's readymade master cleanse. Mumblecore bushwick 3 wolf moon, cardigan deep v chicharrones trust fund. Distillery pork belly locavore flannel DIY, vinyl authentic fashion axe pop-up salvia pickled yuccie selfies. YOLO etsy fingerstache wolf, man braid cardigan street art fanny pack pug tacos poutine. Forage stumptown fingerstache celiac health goth, man braid master cleanse. Biodiesel slow-carb mixtape shoreditch. Meggings humblebrag sriracha, tumblr lo-fi farm-to-table plaid lumbersexual vice freegan.</p>
+
+<p>Normcore VHS selfies, deep v intelligentsia fanny pack man braid 90's vinyl ugh. Pabst bespoke lumbersexual church-key. Listicle austin +1 four loko schlitz, green juice godard lo-fi roof party. Shoreditch pitchfork four loko semiotics wolf butcher godard pickled next level. Kinfolk migas humblebrag, whatever fixie next level biodiesel waistcoat williamsburg. Tousled humblebrag 8-bit irony lumbersexual. YOLO mustache heirloom helvetica cronut.</p>
+
+<p>Authentic portland slow-carb letterpress listicle, single-origin coffee cliche ennui godard PBR&B flexitarian blog tacos kale chips. Twee cray man braid kitsch truffaut, synth neutra. XOXO health goth bicycle rights fap twee mlkshk hella. Whatever normcore chambray, twee farm-to-table bitters cardigan hammock disrupt gentrify hella craft beer photo booth direct trade. Polaroid locavore iPhone, health goth pork belly venmo hammock meditation bespoke art party lumbersexual shabby chic. Schlitz tacos godard 90's meh. Slow-carb actually poutine kogi intelligentsia, roof party biodiesel tilde lo-fi semiotics artisan twee sartorial cold-pressed locavore.</p>
+
+<p>Banh mi artisan offal twee tattooed etsy. Seitan flexitarian hella tote bag shabby chic marfa, mustache bicycle rights tumblr heirloom roof party fap ugh. Bitters kinfolk direct trade, kale chips YOLO schlitz tofu cornhole hella organic photo booth actually intelligentsia. Salvia gastropub lumbersexual everyday carry aesthetic heirloom man braid humblebrag slow-carb semiotics ennui YOLO, gentrify twee. Beard scenester forage aesthetic brunch freegan, VHS flannel marfa pickled affogato pop-up readymade. Post-ironic man braid slow-carb schlitz hashtag. Wayfarers tofu humblebrag, try-hard mumblecore stumptown banjo YOLO.</p>
+                <div style="margin-top:24px;text-align:center"><button class="btn btn-info btn-lg" style="width:50%">Learn More</button></div>
+                </div>
+                    <div class="col-sm-6">
+                        <img src="https://images.unsplash.com/photo-1454817481404-7e84c1b73b4a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5f4cef962c8ddea0da93e59299350831" style="max-width:100%">
+                    </div>
+            </div>
+        </section>
+    </div>
+    <footer class="backbone-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    RESEARCH AREAS<br/>
+                    Life Sciences<br/>
+                    Culture and Society<br/>
+                    Planet and Environment<br/>
+                    Particles to Cosmost<br/>
+                    Data and Computation
+                </div>
+                <div class="col-sm-3">
+                    ABOUT<br/>
+                    Mission<br/>
+                    Leadership<br/>
+                    Partners<br/>
+                    Facilities<br/>
+                    Job Opportunities<br/>
+                    Student Opportunities
+                </div>
+                <div class="col-sm-3">
+                    NEWS<br/>
+                    All Articles<br/>
+                    Blog<br/>
+                    In the News<br/>
+                    Press Releases<br/>
+                    Events<br/>
+                    RSS Feed
+                </div>
+                <div class="col-sm-3">
+                    SUPPORT<br/>
+                    Help Desk<br/>
+                    Resources<br/>
+                    Contact
+                </div>
+            </div>
+            <div class="row" style="position:relative">
+                <span style="position:absolute;bottom:40%">&copy;2016 Institute For Genomics and Systems Biology</span>
+                <span style="float:right">
+                    <img alt="logo_UChicago_0.png" src="https://www.ci.uchicago.edu/sites/default/files/logo_UChicago_0.png" style="max-width: 194px;">
+                </span>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
+</body>
+</html>

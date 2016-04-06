@@ -1,0 +1,87 @@
+/*
+ * Coolors URL: https://coolors.co/86cb92-71b48d-404e7c-251f47-260f26
+ */
+.white {
+    color: #e7ecef;
+}
+.white-rgb {
+    color: rgba(231, 236, 239, 100);
+}
+.light-green {
+    color: #86cb92;
+}
+.light-green-rgb {
+    color: rgba(134, 203, 146, 100);
+}
+.pale-green {
+    color: #71b48d;
+}
+.pale-green-rgb {
+    color: rgba(113, 180, 141, 100);
+}
+.navy-blue {
+    color: #404e7c;
+}
+.navy-blue-rgb {
+    color: rgba(64, 78, 124, 100);
+}
+.dark-blue {
+    color: #251f47;
+}
+.dark-blue-rgb {
+    color: rgba(37, 31, 71, 100);
+}
+.black {
+    color: #260f26;
+}
+.black-rgb {
+    color: rgba(38, 15, 38, 100);
+}
+
+
+
+.color1 {color:#bfd7ea;}
+.color2 {color:#de6b48;}
+.color3 {color:#404e7c;}
+.color4 {color:#251f47;}
+.color5 {color:#260f26;}
+
+.backbone-navbar {
+    padding: 20px 45px;
+    border-top: 12px solid #bfd7ea;
+    border-bottom: 2px solid #e7ecef;
+}
+
+.backbone-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.backbone-tall-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.backbone-frontpage-jumbo {
+    background: #bfd7ea;
+    background: -moz-linear-gradient(50deg, #404e7c, #bfd7ea 45%);
+    background: -webkit-linear-gradient(50deg, #404e7c, #bfd7ea 45%);
+    background: linear-gradient(50deg, #404e7c, #bfd7ea 45%);
+}
+.backbone-center {
+    text-align: center;
+}
+footer {
+    background: #251f47;
+    color: #bfd7ea;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.check-in-sample{
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #D7E0E9;
+    display: none;
+}
